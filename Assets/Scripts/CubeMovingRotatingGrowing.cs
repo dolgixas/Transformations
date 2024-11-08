@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovingRotatingGrowingCube : MonoBehaviour
+public class CubeMovingRotatingGrowing : MonoBehaviour
 {
     [SerializeField]
     private float _movementSpeed = 5f;

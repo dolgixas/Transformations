@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovingSphere1 : MonoBehaviour
+public class SphereMoving : MonoBehaviour
 {
     [SerializeField]
     private float speed = 5f;
@@ -13,7 +13,7 @@ public class MovingSphere1 : MonoBehaviour
         set { speed = Mathf.Max(0, value); }
     }
 
-    void Update()
+    private void Update()
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
